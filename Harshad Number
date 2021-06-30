@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main
+{
+public static void main(String[] args)
+{
+	int num, temp;
+	Scanner sc = new Scanner(System.in);
+	num = sc.nextInt();
+	int sum = 0;
+	temp = num;
+	while(temp > 0)
+	{
+		sum += temp % 10;
+		temp = temp / 10;
+	}
+	int res = num % sum;
+	if(res == 0)
+		System.out.print(“Harshad Number”);
+	else
+		System.out.print(“Not Harshad Number”);
+	}
+}
+
+
+Output:
+
+156
+Harshad Number
