@@ -1,0 +1,30 @@
+class ReplacingNumbers
+{
+static int replaceDigit(int x, int y, int z)
+{
+int result = 0, multiply = 1;
+while (x / 10 > 0)
+ {
+ int remainder = x % 10;
+ if (remainder == y)
+ result = result + y * multiply;
+  else 
+ result = result + remainder * multiply;
+ multiply *= 10;
+   x = x / 10; 
+  }
+  if (x == d1)
+ result = result + y * multiply;
+ result = result + x * multiply;
+        return result;
+    }
+ public static void main(String[] args)
+    {
+        int x = 16719, y = 1, z = 8;
+        System.out.println(replaceDigit(x, y, z));
+    }
+}
+
+Output:
+86789
+
