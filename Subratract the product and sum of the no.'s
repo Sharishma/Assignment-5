@@ -17,4 +17,6 @@ public int subtractProductAndSum(int n)
 
 
 Output:
-
+234
+Expected Answer
+15
